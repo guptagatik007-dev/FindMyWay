@@ -1,23 +1,23 @@
 import './Home.css';
-import compass from '../assets/compass.svg';
-import foldedMap from '../assets/folded-map.svg';
-import globeSearch from '../assets/globe-search.svg';
-import destinationCar from '../assets/destination-car.svg';
-import satellite from '../assets/satellite.svg';
-import directionSign from '../assets/direction-sign.svg';
-import mobileNavigation from '../assets/mobile-navigation.svg';
+import navigationIcon1 from '../assets/navigation_icon_1.png';
+import navigationIcon2 from '../assets/navigation_icon_2.png';
+import navigationIcon3 from '../assets/navigation_icon_3.png';
+import navigationIcon4 from '../assets/navigation_icon_4.png';
+import navigationIcon5 from '../assets/navigation_icon_5.png';
+import navigationIcon6 from '../assets/navigation_icon_6.png';
+import navigationIcon7 from '../assets/navigation_icon_7.png';
 
 function Home() {
   return (
     <main className="home-content">
       <div className="home-decorations" aria-hidden="true">
-        <img className="decor decor-left-1" src={compass} alt="" />
-        <img className="decor decor-left-2" src={foldedMap} alt="" />
-        <img className="decor decor-left-3" src={globeSearch} alt="" />
-        <img className="decor decor-right-1" src={destinationCar} alt="" />
-        <img className="decor decor-right-2" src={satellite} alt="" />
-        <img className="decor decor-right-3" src={directionSign} alt="" />
-        <img className="decor decor-right-4" src={mobileNavigation} alt="" />
+        <img className="decor decor-left-1" src={navigationIcon1} alt="" />
+        <img className="decor decor-left-2" src={navigationIcon2} alt="" />
+        <img className="decor decor-left-3" src={navigationIcon3} alt="" />
+        <img className="decor decor-right-1" src={navigationIcon4} alt="" />
+        <img className="decor decor-right-2" src={navigationIcon5} alt="" />
+        <img className="decor decor-right-3" src={navigationIcon6} alt="" />
+        <img className="decor decor-right-4" src={navigationIcon7} alt="" />
       </div>
       <div className="home-copy">
         <h1>Navigation Solutions</h1>

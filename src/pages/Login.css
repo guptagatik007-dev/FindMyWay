@@ -19,7 +19,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(21, 62, 117, 0.96), rgba(58, 123, 213, 0.72)), var(--feature-image) center / 55% auto no-repeat;
+  background: linear-gradient(135deg, rgba(21, 62, 117, 0.96), rgba(var(--brand-blue-rgb), 0.72)), var(--feature-image) center / 55% auto no-repeat;
 }
 
 .login-feature-content {
@@ -41,7 +41,6 @@
 
 .login-feature h1 {
   margin: 0 0 1rem;
-  font-family: Georgia, 'Times New Roman', serif;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 600;
   line-height: 1.05;
@@ -68,20 +67,19 @@
 .login-back {
   display: inline-block;
   margin-bottom: 4rem;
-  color: #3a7bd5;
+  color: var(--brand-blue);
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
 }
 
 .login-back:hover {
-  color: #2865b5;
+  color: var(--brand-blue);
 }
 
 .login-form-wrap h2 {
   margin: 0 0 0.75rem;
   color: #111827;
-  font-family: Georgia, 'Times New Roman', serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
 }
@@ -115,8 +113,8 @@
 }
 
 .login-form input:focus {
-  border-color: #3a7bd5;
-  outline: 3px solid rgba(58, 123, 213, 0.2);
+  border-color: var(--brand-blue);
+  outline: 3px solid rgba(var(--brand-blue-rgb), 0.2);
 }
 
 .login-submit {
@@ -126,9 +124,9 @@
   gap: 0.65rem;
   margin-top: 1.25rem;
   padding: 0.9rem 1.25rem;
-  border: 1px solid #3a7bd5;
+  border: 1px solid var(--brand-blue);
   border-radius: 4px;
-  background: #3a7bd5;
+  background: var(--brand-blue);
   color: #fff;
   font: inherit;
   font-weight: 600;
@@ -137,8 +135,8 @@
 }
 
 .login-submit:hover {
-  border-color: #2865b5;
-  background: #2865b5;
+  border-color: var(--brand-blue);
+  background: var(--brand-blue);
 }
 
 .login-submit span {

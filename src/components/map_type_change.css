@@ -1,0 +1,119 @@
+.map-type-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  width: 8.5rem;
+  padding: 0.65rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+.map-type-option {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.65rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #475569;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.map-type-option:hover,
+.map-type-option:focus-visible,
+.map-type-option.active {
+  background: #eff6ff;
+  color: var(--brand-blue);
+  outline: none;
+}
+
+.map-type-icon {
+  display: grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.change-path-button {
+  margin-top: 0.35rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--brand-blue);
+  border-radius: 4px;
+  background: var(--brand-blue);
+  color: #fff;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.change-path-button:hover,
+.change-path-button:focus-visible {
+  border-color: var(--brand-blue);
+  background: var(--brand-blue);
+  outline: none;
+}
+
+.map-type-sidebar.collapsed {
+  position: fixed;
+  top: 86px;
+  left: 20rem;
+  z-index: 901;
+  width: 3.5rem;
+  padding: 0.45rem;
+}
+
+.map-type-sidebar.collapsed .map-type-option {
+  justify-content: center;
+  padding: 0.55rem;
+}
+
+.map-type-sidebar.collapsed .map-type-label,
+.map-type-sidebar.collapsed .change-path-button {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .map-type-sidebar {
+    position: static;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .map-type-option {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .change-path-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .map-type-sidebar.collapsed {
+    position: fixed;
+    top: 86px;
+    left: 0;
+    width: 3.5rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}

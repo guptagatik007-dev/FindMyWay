@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Login from './pages/Login';
-import SearchResults from './pages/SearchResults';
+import Navigate from './pages/Navigate';
 import './App.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/search" element={<SearchResults />} />
+          <Route path="/navigate" element={<Navigate />} />
           <Route path="/contact" element={<div style={{ padding: '2rem', color: '#fff', textAlign: 'center' }}>Contact Page</div>} />
         </Routes>
       </div>

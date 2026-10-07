@@ -1,0 +1,12 @@
+.navigate-page {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  padding: 0;
+  color: #111827;
+}
+
+@media (max-width: 600px) {
+  .map-type-sidebar {
+    order: -1;
+  }
+}

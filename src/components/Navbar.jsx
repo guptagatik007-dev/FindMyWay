@@ -12,7 +12,7 @@ function Navbar() {
     const query = term.trim();
 
     if (query) {
-      navigate(`/search?query=${encodeURIComponent(query)}`);
+      navigate(`/navigate?query=${encodeURIComponent(query)}`);
       setIsSearchFocused(false);
     }
   };

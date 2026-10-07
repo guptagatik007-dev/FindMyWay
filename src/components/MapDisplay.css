@@ -1,0 +1,15 @@
+.map-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #111827;
+}
+
+.map-display p {
+  font-size: 1.15rem;
+  font-weight: 600;
+}

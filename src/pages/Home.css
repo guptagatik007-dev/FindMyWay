@@ -82,7 +82,7 @@
   width: 4.5rem;
   height: 3px;
   margin-top: 1.25rem;
-  background: #3a7bd5;
+  background: var(--brand-blue);
 }
 
 .campus-button {
@@ -91,9 +91,9 @@
   gap: 0.65rem;
   margin-bottom: 1.75rem;
   padding: 0.85rem 1.4rem;
-  border: 1px solid #3a7bd5;
+  border: 1px solid var(--brand-blue);
   border-radius: 4px;
-  background: #3a7bd5;
+  background: var(--brand-blue);
   color: #fff;
   font: inherit;
   font-size: 1rem;
@@ -108,12 +108,12 @@
 }
 
 .campus-button:hover {
-  border-color: #2865b5;
-  background: #2865b5;
+  border-color: var(--brand-blue);
+  background: var(--brand-blue);
 }
 
 .campus-button:focus-visible {
-  outline: 3px solid rgba(58, 123, 213, 0.35);
+  outline: 3px solid rgba(var(--brand-blue-rgb), 0.35);
   outline-offset: 3px;
 }
 
@@ -146,14 +146,14 @@
 .service-card {
   min-height: 190px;
   padding: 1.5rem;
-  border-top: 3px solid #3a7bd5;
+  border-top: 3px solid var(--brand-blue);
   background: rgba(248, 250, 252, 0.9);
 }
 
 .service-number {
   display: block;
   margin-bottom: 1rem;
-  color: #3a7bd5;
+  color: var(--brand-blue);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;

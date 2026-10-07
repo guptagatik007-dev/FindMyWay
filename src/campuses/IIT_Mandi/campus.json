@@ -1,0 +1,34 @@
+{
+  "id": "iit-mandi",
+  "name": "IIT Mandi",
+  "center": {
+    "lat": 31.7785,
+    "lng": 76.9905
+  },
+  "zoom": 15.2,
+  "bbox": {
+    "west": 76.975,
+    "south": 31.768,
+    "east": 77.006,
+    "north": 31.789
+  },
+  "zones": [
+    {
+      "id": "north",
+      "name": "North Campus"
+    },
+    {
+      "id": "south",
+      "name": "South Campus"
+    }
+  ],
+  "files": {
+    "buildings": "buildings.geojson",
+    "roads": "roads.geojson",
+    "pois": "pois.json"
+  },
+  "attribution": [
+    "Map data © OpenStreetMap contributors (ODbL)",
+    "Building footprints cross-checked with Overture Maps (ODbL/CDLA)"
+  ]
+}

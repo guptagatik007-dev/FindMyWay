@@ -1,7 +1,7 @@
 .map-display {
   display: flex;
-  align-items: center;
   justify-content: center;
+  overflow-y: auto;
   min-height: calc(100vh - 70px);
   width: 100%;
   border: 1px solid #e2e8f0;
@@ -9,7 +9,33 @@
   color: #111827;
 }
 
-.map-display p {
+.campus-details {
+  width: min(100% - 3rem, 48rem);
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(15 23 42 / 8%);
+}
+
+.campus-details h1,
+.campus-details h2 {
+  margin-top: 0;
+}
+
+.campus-details h2 {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.campus-details ul {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.map-display > p {
+  align-self: center;
   font-size: 1.15rem;
   font-weight: 600;
 }
